@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Minified JS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Vue</title>
+</head>
+
+<body>
+    <header class="nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <section>
+        <div id="section-title">
+            <h2 id="principal-title" >¿Qué es VueJS?</h2>
+            <b>//agregar imagen de fondo</b>
+        </div>
+        <div id="text-phase">
+            <h2>AGREGAR RESPUESTA A PREGUNTA "QUÉ ES VUEJS"</h2>
+        </div>
+        <div id="section-title">
+            <h2 id="principal-title">¿Para qué sirve VueJS?</h2>
+        </div>
+        <div id="text-phase">
+            <h2>//Agregar respuesta a esta pregunra, puedes utilizar varios estilos para poner las respuestas</h2>
+        </div>
+        <div id="section-title">
+            <h2 id="principal-title">Ecosistema dentro de VueJS</h2>
+        </div>
+        <div id="text-phase">
+            <h2>//Agregar respuesta a esta pregunra, puedes utilizar varios estilos para poner las respuestas</h2>
+        </div>
+        <div id="section-title">
+            <h2 id="principal-title">Características</h2>
+        </div>
+        <div id="text-phase">
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 alert alert-dark" role="alert">
+                            <h4 class="title-char">MODULARIDAD</h4>
+                            <p class="text-char">
+                                en Vue tienes más libertad para usar ciertas características como por ejemplo: realizar
+                                llamadas HTTP hace falta la utilización de un paquete como axios para hacer uso de dicha
+                                característica. Todo esto nos da a conocer que vue te ofrece lo básico para trabajar,
+                                pero tú decides si instalar a posteriori utilidades que te serán de ayuda en ciertos
+                                aspectos de tu página web.
+                            </p>
+                        </div>
+                        <div class="col-3 alert alert-light" role="alert">
+                            <h4 class="title-char">REACTIVIDAD</h4>
+                            <p class="text-char">
+                                Vue contiene propiedades reactivas, eso quiere decir que si se cambia una variable en
+                                cierta página, este framework actualiza su valor sin necesidad de hacerlo manualmente.
+                                Un ejemplo claro es el uso de un contador.
+                            </p>
+                        </div>
+                        <div class="col-3 alert alert-info" role="alert">
+                            <h4 class="title-char">COMPONENTES WEB</h4>
+                            <p class="text-char">
+                                Vue se basa en componentes web, este se puede definir como una parte de una web que
+                                puede ser reutilizada y que normalmente tiene estilos y funcionalidades. Los componentes
+                                web pueden ser creados con JavaScript.
+                            </p>
+                        </div>
+                        <div class="col-3 alert alert-warning" role="alert">
+                            <h4 class="title-char">VIRTUAL DOM</h4>
+                            <p class="text-char">
+                                esto tiene un valor importante al momento de realizar cambios en la vista, haciendo que
+                                en lugar de sustituir directamente valores en la vista Vue crea una réplica del Dom que
+                                facilita el o los cambios de forma más óptima.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 alert alert-primary" role="alert">
+                            <h4 class="title-char">EVENTOS Y TRANSICIONES</h4>
+                            <p class="text-char">
+                                estos reaccionan a los eventos provenientes en el DOM y es más usado cuando el usuario
+                                interactúa con elementos dentro de la página web. Su sistema de transiciones y
+                                animaciones es sencillo de usar, pero a su vez puede llegar a ser muy complejo.
+                            </p>
+                        </div>
+                        <div class="col-3 alert alert-secondary" role="alert">
+                            <h4 class="title-char">MIXINS</h4>
+                            <p class="text-char">
+                                son funciones y lógica de los componentes que se puede reutilizar en otros componentes
+                                web.
+                            </p>
+                        </div>
+                        <div class="col-3 alert alert-success" role="alert">
+                            <h4 class="title-char">CICLO DE VIDA DE LOS COMPONENTES</h4>
+                            <p class="text-char">
+                                se tiene el control sobre todo el ciclo de vida de los componentes, es decir, se puede
+                                controlar lo que ocurre antes de que se cargue el componente. Esto es importante o útil
+                                por ejemplo cuando queremos llamar a un API REST para la carga de datos.
+                            </p>
+                        </div>
+                        <div class="col-3 alert alert-danger" role="alert">
+                            <h4 class="title-char">APLICACIONES SPA</h4>
+                            <p class="text-char">
+                                Vue ofrece un sistema de rutas llamado VUE ROUTER que permite tener una página SPA que
+                                conlleva a que todas las páginas se encuentran ya cargadas cuando el usuario entra en la
+                                página web de tal forma que cambiar de página es instantáneo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div id="section-title">
+            <h2 id="principal-title">¿Por qué elegir VueJS?</h2>
+        </div>
+        <div id="text-phase">
+            <h2>//Agregar respuesta a esta pregunra, puedes utilizar varios estilos para poner las respuestas</h2>
+        </div>
+        <div id="section-title">
+            <h2 id="principal-title">¿Por qué elegir VueJS?</h2>
+        </div>
+        <div id="text-phase">
+            <h2>//Agregar respuesta a esta pregunra, puedes utilizar varios estilos para poner las respuestas</h2>
+        </div>
+        <div id="section-title">
+            <h2 id="principal-title">Ventajas de VueJS</h2>
+        </div>
+        <div id="text-phase">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3">
+                        <article id="cards-vent">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/vue1.jfif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">En cuanto a su curva de aprendizaje se tarda menos tiempo en
+                                        aprender lo
+                                        básico para poder desenvolverse en este framework.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-3">
+                        <article id="cards-vent">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/vue2.jfif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Posee una arquitectura limpia, el código de los componentes
+                                        queda mucho más ordenado y limpio.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-3">
+                        <article id="cards-vent">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/vue3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Los archivos dentro de Vue permiten la escritura de HTML y CSS
+                                        sin tener que hacerlo dentro de JavaScript.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-3">
+                        <article id="cards-vent">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/vue4.jfif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Fuera de un aspecto de programación, Vue contiene una comunidad
+                                        que continuamente se encuentra en crecimiento, tal vez no tanto como React o
+                                        Angular, pero sin duda se perfila para ser uno de los framework más utilizados
+                                        en los siguientes años.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section-title">
+            <h2 id="principal-title">Instalación</h2>
+        </div>
+        <div id="text-phase">
+            <article class="table">
+                <table class="table table-success table-striped container">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Paso de Instalación</th>
+                            <th scope="col">Comando</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td id="row-just">La instalación de Vue es bastante sencilla, basta hacer uso de Vue CLI la
+                                cual es una
+                                herramienta para línea de comandos que sirve para gestionar proyectos de Vue, para
+                                utilizarla podemos descargarla en el equipo con el uso de NPM:</td>
+                            <td>
+                                <code>
+                                    npm install -g @vue/cli 
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td id="row-just">
+                                Seguidamente ya instalado podemos crear la estructura inicial de nuestro proyecto con el
+                                comando:
+                            </td>
+                            <td>
+                                <code>
+                                    vue create nombre_del_proyecto 
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td id="row-just">
+                                Una vez creado el proyecto podremos crear nuestro proyecto eligiendo las configuraciones
+                                del mismo. Podemos elegirlo por defecto que es lo más común, pero también podemos
+                                personalizarlo según el alcance de nuestro proyecto.
+                                Para la ejecución de nuestro proyecto bastará con insertar el comando:
+                            </td>
+                            <td>
+                                <code>
+                                    npm run serve 
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td id="row-just">
+                                Si se desea ejecutar nuestro proyecto mediante una interfaz gráfica que lo que nos
+                                permite es administrar los proyectos de Vue, basta con insertar la siguiente línea de
+                                comando:
+                            </td>
+                            <td>
+                                <code>
+                                    vue ui
+                                </code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+        <div id="section-title">
+            <h2 id="principal-title">Ejemplo</h2>
+        </div>
+        <div id="text-phase">
+            <h2>//Agregar respuesta a esta pregunra, puedes utilizar varios estilos para poner las respuestas</h2>
+        </div>
+        <div id="section-title">
+            <h2 id="principal-title">Conclusiones</h2>
+        </div>
+        <div id="text-phase">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <ul>
+                            <li class="list">Se debe elegir el framework correcto por la razón correcta, dependiendo del contexto, desarrollar
+                                con uno u otro framework puede ayudarnos a trabajar mejor en equipo.</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/vue5.png" alt="" class="image">
+                    </div>
+                    <div class="col-4">
+                        <ul>
+                            <li class="list">
+                                Podemos concluir qie con este tipo de frameworks es más fácil construir código bien estructurado
+                                para poder desarrollar aplicaciones complejas.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li class="list2">
+                            En conclusiòn, Vue es una herramienta para construir Single Page Apps, pero el ecosistema permite
+                            construir aplicaciones móviles nativas con soluciones basadas en Vue como Weex.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center footer-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <h3>Dirección</h3>
+                    <p>
+                        CABA - Argentina <br />
+                        carrasco 400
+                    </p>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h3>UNIVERSIDAD TÉCNICA PARTICULAR DE LOJA</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h3>Trabajo FreeLancer</h3>
+                    <p>Tengo más de X años de experiencia en maquetación web y me apasiona lo que hago!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
