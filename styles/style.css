@@ -1,0 +1,103 @@
+
+nav {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-style {
+    padding-top: 50px;
+    background-color: #2C3E50;
+}
+footer {
+  color: white;
+}
+footer h3 {
+  margin-bottom: 30px;
+    font-weight: 800;
+}
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #2C3E50;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
+}
+
+/*
+    Solo id
+*/
+#principal-title {
+    text-align: center;
+    padding-top: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#section-title {
+    background-color: cadetblue;
+    padding-bottom: 10%;
+}
+
+#text-phase {
+    padding-bottom: 10%;
+}
+
+#row-just {
+    text-align: justify;
+}
+
+#foot {
+    background-color: crimson;
+}
+
+/*
+    Solo clases
+*/
+
+.container {
+    padding-top: 10%;
+}
+
+.container-fluid {
+    padding-top: 10%;
+}
+
+.title-char {
+    text-align: center;
+}
+
+.text-char {
+    text-align: justify;
+}
+
+.card-text {
+    margin-top: 5%;
+    padding-bottom: 20%;
+}
+
+.navbar {
+    padding-top: none;
+}
+
+.table {
+    padding-top: 5%;
+}
+
+.list {
+    padding-top: 2%;
+    list-style: none;
+    text-align: justify;
+}
+
+.list2 {
+    text-align: center;
+    list-style: none;
+}
+
+.image {
+    text-align: center;
+    width: 400px;
+    padding-bottom: 5%;
+}
