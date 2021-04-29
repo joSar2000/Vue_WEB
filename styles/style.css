@@ -35,13 +35,26 @@ footer .footer-below {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#imgvue{
+    width: 50%;
+    height: 70%;
+    margin:10px auto;
+    display:block;
+}
+
 #section-title {
     background-color: cadetblue;
     padding-bottom: 10%;
 }
 
 #text-phase {
-    padding-bottom: 10%;
+    width: 100%;
+    background: #ccc;
+    text-align: justify;
+    padding-left: 13em;
+    padding-right: 13em;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 #row-just {
@@ -79,6 +92,17 @@ footer .footer-below {
 
 .navbar {
     padding-top: none;
+}
+
+.ref{
+    list-style-type: square;
+     width: 100%;
+    background: #ccc;
+    text-align: justify;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 
 .table {
