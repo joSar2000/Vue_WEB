@@ -16,71 +16,86 @@
 </head>
 
 <body>
-    <header class="nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+    <header>
+
 
     </header>
     <section>
         <div id="section-title">
             <h1 id="principal-title"><b>¿Qué es VueJS?</b></h2>
-            
-            <img id="imgvue" src="images/Vuejs.jpeg" width="300" height="400" alt="foto"/>
+
+                <img id="imgvue" src="images/Vuejs.jpeg" width="300" height="400" alt="foto" />
         </div>
         <div id="text-phase">
-            <h4>Vue ya tiene una dilatada historia. En 2014 Evan You acababa de terminar su etapa en Google como desarrollador y entre otros proyectos también había trabajado en Angular. Su experiencia le permitió crear su propia biblioteca personal que posteriormente liberó al público. Fue precisamente la comunidad quien hizo crecer el proyecto hasta convertirse en el potente y ligero framework que es en nuestros días.</h4>
-            <h4>Framework progresivo Javascript para crear interfaces de usuario. Está diseñado desde cero para ser utilizado incrementalmente.</h4>
+            <h4>Vue ya tiene una dilatada historia. En 2014 Evan You acababa de terminar su etapa en Google como
+                desarrollador y entre otros proyectos también había trabajado en Angular. Su experiencia le permitió
+                crear su propia biblioteca personal que posteriormente liberó al público. Fue precisamente la comunidad
+                quien hizo crecer el proyecto hasta convertirse en el potente y ligero framework que es en nuestros
+                días.</h4>
+            <h4>Framework progresivo Javascript para crear interfaces de usuario. Está diseñado desde cero para ser
+                utilizado incrementalmente.</h4>
         </div>
         <div id="section-title">
             <h2 id="principal-title">¿Para qué sirve VueJS?</h2>
         </div>
         <div id="text-phase">
-            <h2>//Agregar respuesta a esta pregunra, puedes utilizar varios estilos para poner las respuestas</h2>
+            <div class="row">
+                <div class="col-sm-6" style="justify-content: center">
+                    <figure>
+                        <img src="images/How-to-Create-Data-Driven-User-Interfaces-in-Vue.png" alt="Vue.js Usos"
+                            style="width:100%;">
+                    </figure>
+                    <cite>"Puede utilizar el mismo punto de montaje y cambiar dinámicamente entre varios componentes
+                        utilizando el elemento reservado y enlazar dinámicamente a su atributo".</cite>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Es una librería javascript pensada para tener un framework con el que desarrollar páginas web.
+                        Con
+                        Vue se pueden crear todas las vistas de una página web, haciéndolas dinámicas, además, se puede
+                        conectar a
+                        un servidor para tener datos dinámicos de una base de datos, etc.</h4>
+                    <p>Es un framework completo pensado para los programadores web, con buena curva de aprendizaje y que
+                        se
+                        puede usar en todo tipo de webs.</p>
+                </div>
+            </div>
         </div>
         <div id="section-title">
             <h2 id="principal-title">Ecosistema dentro de VueJS</h2>
         </div>
-        <div id="text-phase">
-            <h2>//Agregar respuesta a esta pregunra, puedes utilizar varios estilos para poner las respuestas</h2>
+        <div id="text-phase" style="align-items: center; background-color: #fff;">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Vue</h4>
+                    <p>
+                        Librería principal, donde todos los demás elementos del ecosistema son acoplados.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Vue router</h4>
+                    <p>
+                        <strong>Manejo de rutas</strong>, e integración con los componentes para el desarrollo de
+                        <strong>SPA's</strong> (Single Page Aplicactions)
+                    </p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Mapeo de rutas / vistas</li>
+                        <li class="list-group-item"> Rutas dinámicas</li>
+                        <li class="list-group-item"> Links con manejo automático</li>
+                        <li class="list-group-item"> Historial de navegación</li>
+                        <li class="list-group-item">Navegación programática</li>
+                        <li class="list-group-item">Transiciones</li>
+                        <li class="list-group-item">Guards</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Vuex</h4>
+                    <p>Manejo del estado de la aplicación e integración con los componentes para el desarrollo de SPA's
+                    </p>
+                    <figure>
+                        <img src="images/vuex.png" alt="Vuex" width="100%">
+                    </figure>
+                </div>
+            </div>
         </div>
         <div id="section-title">
             <h2 id="principal-title">Características</h2>
@@ -166,25 +181,27 @@
             <h2 id="principal-title">¿Por qué elegir VueJS?</h2>
         </div>
         <div id="text-phase">
-        	<h3>RAZONES</h3>
-	        <h4>
-	        <li class="ref">
-	            Es muy útil debido a su compatibilidad con otras librerías Javascript y la capacidad de añadir mas lógica compleja a aplicaciones existentes.
-	        </li>
-            <li class="ref">
-            	Es muy útil debido a su compatibilidad con otras librerías Javascript y la capacidad de añadir mas lógica compleja a aplicaciones existentes.
-            </li>
-            <li class="ref">
-            	Trabaja con frameworks de alto nivel sobre Vue como Nuxt.js que facilita el Server Side Rendering.
-            </li> 
-			<li class="ref">
-				Si se eligen conceptos de Vue.js para explicar su preferencia ante otros frameworks, serìan estos.
-			</li> 
-			<li class="ref">El dato como centro de todo.</li>
-			<li class="ref">El sistema de componentes es reactivo</li>
-			<li class="ref">Sin fricción con otras librerías o recursos.</li>
-			<li class="ref">Todo está en el sitio que tiene que estar.</li>
-			</h4>
+            <h3>RAZONES</h3>
+            <h4>
+                <li class="ref">
+                    Es muy útil debido a su compatibilidad con otras librerías Javascript y la capacidad de añadir mas
+                    lógica compleja a aplicaciones existentes.
+                </li>
+                <li class="ref">
+                    Es muy útil debido a su compatibilidad con otras librerías Javascript y la capacidad de añadir mas
+                    lógica compleja a aplicaciones existentes.
+                </li>
+                <li class="ref">
+                    Trabaja con frameworks de alto nivel sobre Vue como Nuxt.js que facilita el Server Side Rendering.
+                </li>
+                <li class="ref">
+                    Si se eligen conceptos de Vue.js para explicar su preferencia ante otros frameworks, serìan estos.
+                </li>
+                <li class="ref">El dato como centro de todo.</li>
+                <li class="ref">El sistema de componentes es reactivo</li>
+                <li class="ref">Sin fricción con otras librerías o recursos.</li>
+                <li class="ref">Todo está en el sitio que tiene que estar.</li>
+            </h4>
         </div>
         <div id="section-title">
             <h2 id="principal-title">¿Por qué elegir VueJS?</h2>
@@ -324,8 +341,17 @@
         <div id="section-title">
             <h2 id="principal-title">Ejemplo</h2>
         </div>
-        <div id="text-phase">
-            <h2>//Agregar respuesta a esta pregunra, puedes utilizar varios estilos para poner las respuestas</h2>
+        <div id="text-phase" style="background-color: #fff;">
+            
+            <h3>Menú de navegación</h3>
+            <div class="container">
+                <figure>
+                    <img src="images/htmlVue.png" alt="htmlVue" style="width: 80%;">
+                </figure>
+                <figure>
+                    <img src="images/jsVue.png" alt="htmlVue" style="width: 80%;">
+                </figure>
+            </div>
         </div>
         <div id="section-title">
             <h2 id="principal-title">Conclusiones</h2>
@@ -335,7 +361,8 @@
                 <div class="row">
                     <div class="col-4">
                         <ul>
-                            <li class="list">Se debe elegir el framework correcto por la razón correcta, dependiendo del contexto, desarrollar
+                            <li class="list">Se debe elegir el framework correcto por la razón correcta, dependiendo del
+                                contexto, desarrollar
                                 con uno u otro framework puede ayudarnos a trabajar mejor en equipo.</li>
                         </ul>
                     </div>
@@ -345,7 +372,8 @@
                     <div class="col-4">
                         <ul>
                             <li class="list">
-                                Podemos concluir qie con este tipo de frameworks es más fácil construir código bien estructurado
+                                Podemos concluir qie con este tipo de frameworks es más fácil construir código bien
+                                estructurado
                                 para poder desarrollar aplicaciones complejas.
                             </li>
                         </ul>
@@ -354,7 +382,8 @@
                 <div>
                     <ul>
                         <li class="list">
-                            En conclusiòn, Vue es una herramienta para construir Single Page Apps, pero el ecosistema permite
+                            En conclusiòn, Vue es una herramienta para construir Single Page Apps, pero el ecosistema
+                            permite
                             construir aplicaciones móviles nativas con soluciones basadas en Vue como Weex.
                         </li>
                     </ul>
@@ -376,19 +405,24 @@
                     <h3>UNIVERSIDAD TÉCNICA PARTICULAR DE LOJA</h3>
                     <ul class="list-inline">
                         <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-google-plus"></i></a>
                         </li>
                         <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-linkedin"></i></a>
                         </li>
                         <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-dribbble"></i></a>
                         </li>
                     </ul>
                 </div>
